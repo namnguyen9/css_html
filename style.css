@@ -1,0 +1,163 @@
+body {
+    background-image:url('image/bg-intro-desktop.png');
+   background-color:hsl(0, 100%, 74%);
+}
+
+div.container {
+    display: flex;
+    width: 1349px;
+    right: 729px;
+}
+
+.right {
+    flex: 60%;
+    padding: 100px 0px;
+  
+}
+
+.right form {
+    background-color: white;
+    width: 400px;
+    height: 420px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    display: inline-table;
+    text-align:center;
+}
+.right form input {
+    display: block;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 20px 12px;
+    padding-left: 25px;
+}
+
+.right form .icon-error{
+    display: none;
+    position: relative;
+    top: -59px;
+    left: 350px;
+}
+.right form .status{
+    display: none;
+    color: red;
+    font-size: 75%;
+    font-style: italic;
+    position: relative;
+    margin-top: -38px;
+    text-align: right;
+    left: -10px;
+}
+
+#submit {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 5px 5px grey;
+    cursor: pointer;
+    padding: 0px 0px 0px 25px;
+    width: 380px;
+    height: 50px;
+    margin: 20px 12px;
+}
+.right form h6 {
+    color: hsl(246, 25%, 77%);
+    margin-top: 25px;
+}
+.right form h6 span {
+    color:hsl(0, 100%, 74%);
+}
+.right  button {
+    width: 452px;
+    height: 50px;
+    border-radius: 5px;
+    background-color:hsl(248, 32%, 49%);
+    border: none;
+    color: white;
+    box-shadow: 1 5px 5px grey;
+    cursor: pointer;
+}
+.right button strong {
+    font-weight: bold;
+}
+.right button:hover {
+    opacity: 0.8;
+}
+
+
+
+.left {
+    color: white;
+    text-align: left;
+    flex: 40%;
+    padding:280px 180px;
+    height: 169px;
+}
+
+.left h2 {
+    display: inline;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 250%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.left p {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 320px){
+.container {
+    display: block;
+}
+
+.right {
+    padding: 100px 40px;
+    width: 320px;
+    height: 530px;
+}
+
+.right form {
+    width: 320px;
+    height: 425px;
+    margin-top: 25px;
+    padding: 0px 0px;
+}
+
+.right form .input {
+    margin: 20px;
+    margin-right: 12px;
+    margin-left: 50px;
+    width: 192px;
+}
+
+.right form .icon-error {
+    left: 245px;
+}
+
+.right form .status {
+    left: -50px;
+    right: 0px;
+}
+
+.right button {
+    padding: 20px 50px;
+    width: 320px;
+    height: 80px;
+}
+.right button strong {
+    width: auto;
+    height: auto;
+}
+
+
+
+}

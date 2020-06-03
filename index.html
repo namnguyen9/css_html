@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Learn to code by 
+                <br>
+                watching others
+            </h2>
+            <p>
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div class ="right">
+            <button class>
+                <strong>Try it free 7 days</strong>then $20/mo. thereafter
+            </button>
+            <form action="">
+                <div class="firt_name">
+                    <input type="text" name="firt_name" placeholder="Firt Name" class="input" required>
+                    <img src="icon/icon-error.svg" alt id="icon1" class="icon-error">
+                    <span id = "status1" class="status"> First Name cannot be empty</span>
+                </div>
+                <div class="last_name">        
+                    <input type="text" name="last_name" placeholder="Last Name" class="input" required>
+                    <img src="icon/icon-error.svg" alt id="icon2" class="icon-error" >
+                    <span id = "status2" class="status" > Last Name cannot be empty</span>
+                </div>
+                <div class="email">
+                    <input type="email" name="email" placeholder="Email Address" class="input" required>
+                    <img src="icon/icon-error.svg" alt id="icon3" class="icon-error" >
+                    <span id = "status3" class="status" >Email Address cannot be empty</span>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" placeholder="Password" class="input" required>
+                    <img src="icon/icon-error.svg" alt id="icon4" class="icon-error" >
+                    <span id = "status4" class="status" > Password cannot be empty</span>
+                </div>
+                <input type="submit" id="submit" onclick="Check()" value="Claim your free trial" >
+                <h6>
+                    By clicking the button, you are agreeing to our 
+                    <span>Terms and Services</span>
+                </h6>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function Check() {
+       document.getElementById('icon1').style = "display: block";
+       document.getElementById('icon2').style = "display:block";
+       document.getElementById('icon3').style = "display:block";
+       document.getElementById('icon4').style = "display:block";
+
+       document.getElementById('status1').style = "display:block";
+       document.getElementById('status2').style = "display:block";
+       document.getElementById('status3').style = "display:block";
+       document.getElementById('status4').style = "display:block";
+    }
+</script>
+</html>
